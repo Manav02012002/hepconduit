@@ -1,0 +1,84 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+
+# Virtualenv / Conda / env files
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.*
+conda-meta/
+
+# Builds / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.whl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Local runtime outputs
+artifacts/
+out/
+outputs/
+tmp/
+temp/
+*.hepmc
+*.lhe
+*.parquet
+*.csv
+*.tsv
+
+# Benchmarks / profiling
+.prof
+*.prof
+*.pstats
+
+# Node (if ever added)
+node_modules/
+
+# Secrets (defense in depth)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets.*
+*.secrets.*
+
+# OS trash
+Thumbs.db
+.DS_Store
+**/.DS_Store

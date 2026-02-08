@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hepconduit"
+version = "0.3.0"
+description = "Universal HEP event data format converter (pandoc for particle physics)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Manav Madan Rawal"}]
+dependencies = []
+
+[project.optional-dependencies]
+parquet = ["pyarrow>=12"]
+pdg = ["particle>=0.20"]
+all = ["hepconduit[parquet,pdg]"]
+
+[project.scripts]
+hepconduit = "hepconduit.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
